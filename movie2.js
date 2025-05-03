@@ -13,24 +13,23 @@ async function getTopMovies() {
 // Call the function
 getTopMovies().then(movies => {
     document.querySelector(".one").innerHTML=movies[0].title;
-    document.querySelector(".one-rate").innerHTML=Math.Ceil(movies[0].vote_average *10)/10;
-    console.log(roundUpToOneDecimal(movies[1].vote_average));
+    document.querySelector(".one-rate").innerHTML=Math.ceil(movies[0].vote_average *10)/10;
     document.querySelector(".two").innerHTML=movies[1].title;
-    document.querySelector(".two-rate").innerHTML=roundUpToOneDecimal(movies[1].vote_average);
+    document.querySelector(".two-rate").innerHTML=Math.ceil(movies[1].vote_average *10)/10;
     document.querySelector(".three").innerHTML=movies[2].title;
-    document.querySelector(".three-rate").innerHTML=movies[2].vote_average;
+    document.querySelector(".three-rate").innerHTML=Math.ceil(movies[2].vote_average *10)/10;;
     document.querySelector(".four").innerHTML=movies[3].title;
-    document.querySelector(".four-rate").innerHTML=movies[3].vote_average;
+    document.querySelector(".four-rate").innerHTML=Math.ceil(movies[3].vote_average *10)/10;;
     document.querySelector(".five").innerHTML=movies[4].title;
-    document.querySelector(".five-rate").innerHTML=movies[4].vote_average;
+    document.querySelector(".five-rate").innerHTML=Math.ceil(movies[4].vote_average *10)/10;;
     document.querySelector(".six").innerHTML=movies[5].title;
-    document.querySelector(".six-rate").innerHTML=movies[5].vote_average;
+    document.querySelector(".six-rate").innerHTML=Math.ceil(movies[5].vote_average *10)/10;;
     document.querySelector(".seven").innerHTML=movies[6].title;
-    document.querySelector(".seven-rate").innerHTML=movies[6].vote_average;
+    document.querySelector(".seven-rate").innerHTML=Math.ceil(movies[6].vote_average *10)/10;;
     document.querySelector(".eight").innerHTML=movies[7].title;
-    document.querySelector(".eight-rate").innerHTML=movies[7].vote_average;
+    document.querySelector(".eight-rate").innerHTML=Math.ceil(movies[7].vote_average *10)/10;;
     document.querySelector(".nine").innerHTML=movies[8].title;
-    document.querySelector(".nine-rate").innerHTML=movies[8].vote_average;
+    document.querySelector(".nine-rate").innerHTML=Math.ceil(movies[8].vote_average *10)/10;;
     document.querySelector(".ten").innerHTML=movies[9].title;
-    document.querySelector(".ten-rate").innerHTML=movies[9].vote_average;
+    document.querySelector(".ten-rate").innerHTML=Math.ceil(movies[9].vote_average *10)/10;;
 });
