@@ -13,9 +13,9 @@ async function getTopMovies() {
 // Call the function
 getTopMovies().then(movies => {
     document.querySelector(".one").innerHTML=movies[0].title;
-    document.querySelector(".one-rate").innerHTML=movies[0].vote_average;
+    document.querySelector(".one-rate").innerHTML=roundUpToOneDecimal(movies[0].vote_average);
     document.querySelector(".two").innerHTML=movies[1].title;
-    document.querySelector(".two-rate").innerHTML=movies[1].vote_average;
+    document.querySelector(".two-rate").innerHTML=roundUpToOneDecimal(movies[1].vote_average);
     document.querySelector(".three").innerHTML=movies[2].title;
     document.querySelector(".three-rate").innerHTML=movies[2].vote_average;
     document.querySelector(".four").innerHTML=movies[3].title;
